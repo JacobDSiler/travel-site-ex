@@ -11116,9 +11116,8 @@ var _Modal2 = _interopRequireDefault(_Modal);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-/*var revealOnScroll =*/
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "65%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
 
@@ -11267,6 +11266,7 @@ var StickyHeader = function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
+    this.lazyImages = (0, _jquery2.default)(".lazyload");
     this.siteHeader = (0, _jquery2.default)(".site-header");
     this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
     this.createHeaderWaypoint();
@@ -11274,9 +11274,17 @@ var StickyHeader = function () {
     this.headerLinks = (0, _jquery2.default)(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreshWaypoints();
   }
 
   _createClass(StickyHeader, [{
+    key: 'refreshWaypoints',
+    value: function refreshWaypoints() {
+      this.lazyImages.load(function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll();
@@ -11735,11 +11743,13 @@ var Modal = function () {
   _createClass(Modal, [{
     key: "events",
     value: function events() {
-      // Clicks the 'open modal' button
+      // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
-      // Clicks the X 'close modal' button
+
+      // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
-      // Pushes any key
+
+      // pushes any key
       (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
     }
   }, {

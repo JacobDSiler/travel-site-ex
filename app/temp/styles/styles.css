@@ -461,11 +461,11 @@ img {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-a{
+a {
   color: #d59541;
 }
 
@@ -572,6 +572,8 @@ a{
 
 .wrapper {
   overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
@@ -583,32 +585,32 @@ a{
   }
 
 .wrapper--narrow {
-    max-width: 500px;
+    max-width: 470px;
   }
 
-.wrapper--no-padding-until-medium{
+.wrapper--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
   }
 
 @media (min-width: 800px) {
 
-.wrapper--no-padding-until-medium{
-        padding-left: 18px;
-        padding-right: 18px
+.wrapper--no-padding-until-medium {
+      padding-left: 18px;
+      padding-right: 18px
   }
   }
 
-.wrapper--no-padding-until-large{
+.wrapper--no-padding-until-large {
     padding-left: 0;
     padding-right: 0;
   }
 
-@media (min-width: 1110px) {
+@media (min-width: 1010px) {
 
-.wrapper--no-padding-until-large{
-        padding-left: 18px;
-        padding-right: 18px
+.wrapper--no-padding-until-large {
+      padding-left: 18px;
+      padding-right: 18px
   }
   }
 
@@ -630,33 +632,35 @@ a{
 
 .page-section {
   padding: 1.2rem 0;
+
 }
 
 @media (min-width: 800px) {
 
 .page-section {
     padding: 4.5rem 0
+
 }
   }
 
-.page-section--no-padding-until-medium {
+.page-section--no-b-padding-until-medium {
     padding-bottom: 0;
   }
 
 @media (min-width: 800px) {
 
-.page-section--no-padding-until-medium {
+.page-section--no-b-padding-until-medium {
       padding-bottom: 4.5rem
   }
   }
 
-.page-section--no-padding-until-large {
+.page-section--no-b-padding-until-large {
     padding-bottom: 0;
   }
 
-@media (min-width: 1110px) {
+@media (min-width: 1010px) {
 
-.page-section--no-padding-until-large {
+.page-section--no-b-padding-until-large {
       padding-bottom: 4.5rem
   }
   }
@@ -670,12 +674,11 @@ a{
     background-color: #e0e6ef;
   }
 
-@media (min-width: 1110px) {
-
-.page-section--testimonials {
+@media (min-width: 1010px) {
+      .page-section--testimonials.lazyloaded {
         background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-        background-size: cover
-  }
+        background-size: cover;
+      }
   }
 
 .headline {
@@ -736,11 +739,11 @@ a{
     margin-top: 0;
   }
 
-.row::after{
-      content:"";
-      clear: both;
-      display: table;
-    }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .row--t-padding {
     padding-top: 80px;
@@ -804,9 +807,7 @@ a{
     }
   }
 
-/*Large Screen Rules*/
-
-@media (min-width: 1110px) {
+@media (min-width: 1010px) {
 
     .row__b-margin-until-large {
       margin-bottom: 0;
@@ -836,39 +837,41 @@ a{
     }
   }
 
-/*Begin Equal Height Rules*/
+/* Begin Equal Height Rules */
 
 @media (min-width: 800px) {
 
 .row--equal-height-at-medium {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
-}
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+
+  }
   }
 
 .row--equal-height-at-medium > div {
-    float: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
 
-@media (min-width: 1110px) {
+@media (min-width: 1010px) {
 
 .row--equal-height-at-large {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
-}
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+
+  }
   }
 
 .row--equal-height-at-large > div {
-    float: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
 
 .generic-content-container p {
     font-weight: 300;
@@ -911,8 +914,8 @@ a{
   }
 
 .section-title--less-margin {
-    margin-top: 0;
     margin-bottom: 1.3rem;
+    margin-top: 0;
   }
 
 .section-title__icon {
@@ -978,15 +981,15 @@ a{
 
 .testimonial {
   background-color: rgba(255, 255, 255, .8);
-  padding: 0 18px 1px 1.8125rem;
+  padding: 0 18px 1px 18px;
   margin-bottom: 98px;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1010px) {
 
 .testimonial {
-      padding: 0 1.8125rem 1px 1.8125rem;
-      margin-bottom: 0
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem
 }
   }
 
@@ -1025,7 +1028,7 @@ a{
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/svg/sprite-69f19c2e.svg');
+      background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
     }
 
 .icon--clear-view-escapes {
@@ -1100,14 +1103,14 @@ Instead edit gulp/templates/sprite */
     background-position: 36.69752421959096% 45.792307692307695%;
   }
 
-.site-footer{
+.site-footer {
   background-color: #2f5572;
   color: #FFF;
   padding: .5rem 0;
   text-align: center;
 }
 
-.site-footer__text{
+.site-footer__text {
     display: block;
     margin-bottom: 1rem;
     font-weight: 200;
@@ -1115,47 +1118,46 @@ Instead edit gulp/templates/sprite */
 
 @media (min-width: 800px) {
 
-.site-footer__text{
+.site-footer__text {
       display: inline;
       margin-bottom: 0;
       margin-right: 1.4rem
   }
   }
 
-.site-header{
+.site-header {
   padding: 10px 0;
   position: absolute;
   width: 100%;
-  z-index:2;
+  z-index: 2;
   -webkit-transition: background-color .3s ease-out;
   transition: background-color .3s ease-out;
 }
 
-.site-header--is-expanded{
+.site-header--is-expanded {
     background-color: rgba(47,85,114, .55);
   }
 
 @media (min-width: 800px) {
 
-.site-header{
+.site-header {
     position: fixed;
     background-color: rgba(47,85,114, .3)
 }
 
-      .site-header--dark {
-        background-color: rgba(23, 51, 72, .85);
-      }
+    .site-header--dark {
+      background-color: rgba(23, 51, 72, .85);
+    }
   }
 
 @media (min-width: 800px) {
 
-.site-header__btn-container{
-    float: right
+.site-header__btn-container {
+      float: right
   }
   }
 
-.site-header__logo{
-    background-color: #2f5572;
+.site-header__logo {
     position: absolute;
     top: 0;
     left: 50%;
@@ -1165,30 +1167,31 @@ Instead edit gulp/templates/sprite */
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    background-color: #2f5572;
     padding: 25px 36px;
   }
 
 @media (min-width: 800px) {
 
-.site-header__logo{
+.site-header__logo {
       left: auto;
       -webkit-transform: translateX(0);
               transform: translateX(0)
   }
 
       .site-header--dark .site-header__logo {
-        -webkit-transform: scale(.57) translateY(-1px);
-                transform: scale(.57) translateY(-1px);
+        -webkit-transform: scale(.57);
+                transform: scale(.57);
       }
   }
 
-.site-header__logo__graphic{
+.site-header__logo__graphic {
     text-indent: -9999px;
   }
 
-.site-header__menu-icon{
+.site-header__menu-icon {
     width: 20px;
     height: 19px;
     position: absolute;
@@ -1214,17 +1217,16 @@ Instead edit gulp/templates/sprite */
     }
 
 .site-header__menu-icon__middle {
-      opacity: 1;
       position: absolute;
       top: 8px;
       left: 0;
       width: 20px;
       height: 3px;
       background-color: #FFF;
-      -webkit-transform-origin: 0 50%;
-              transform-origin: 0 50%;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out;
+      -webkit-transform-origin: 0 50%;
+              transform-origin: 0 50%;
     }
 
 .site-header__menu-icon::after {
@@ -1245,28 +1247,28 @@ Instead edit gulp/templates/sprite */
 
 @media (min-width: 800px) {
 
-.site-header__menu-icon{
+.site-header__menu-icon {
       display: none
   }
   }
 
 .site-header__menu-icon--close-x::before {
-      -webkit-transform: rotate(45deg) scalex(1.25);
-              transform: rotate(45deg) scalex(1.25);
+      -webkit-transform: rotate(45deg) scaleX(1.25);
+              transform: rotate(45deg) scaleX(1.25);
     }
 
 .site-header__menu-icon--close-x .site-header__menu-icon__middle {
-    opacity: 0;
-    -webkit-transform: scalex(0);
-            transform: scalex(0);
+      opacity: 0;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
     }
 
-.site-header__menu-icon--close-x::after{
-      -webkit-transform: rotate(-45deg) scalex(1.25) translateY(1px);
-              transform: rotate(-45deg) scalex(1.25) translateY(1px);
+.site-header__menu-icon--close-x::after {
+      -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+              transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
 
-.site-header__menu-content{
+.site-header__menu-content {
     opacity: 0;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -1276,18 +1278,16 @@ Instead edit gulp/templates/sprite */
     z-index: -10;
     padding-top: 90px;
     text-align: center;
-
   }
 
 @media (min-width: 800px) {
 
-.site-header__menu-content{
+.site-header__menu-content {
       opacity: 1;
       z-index: 1;
       padding-top: 0;
       -webkit-transform: scale(1);
               transform: scale(1)
-
   }
   }
 
@@ -1299,60 +1299,61 @@ Instead edit gulp/templates/sprite */
     }
 
 .primary-nav {
-padding-top:10px;
+  padding-top: 10px;
 }
 
 @media (min-width: 800px) {
 
 .primary-nav {
-  padding-top: 0
+    padding-top: 0
 }
   }
 
 @media (min-width: 800px) {
 
-.primary-nav--pull-right{
-    float: right
+.primary-nav--pull-right {
+      float: right
   }
   }
 
-.primary-nav ul{
+.primary-nav ul {
     margin: 0;
     padding: 0;
   }
 
-.primary-nav ul::after{
-      content:"";
-      clear: both;
-      display: table;
-    }
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.primary-nav li{
+.primary-nav li {
     list-style: none;
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 7px;
   }
 
 @media (min-width: 800px) {
 
-.primary-nav li{
-    float: left;
-    display: block
+.primary-nav li {
+      padding-right: 20px;
+      float: left;
+      display: block
   }
   }
 
-.primary-nav li:last-child{
+.primary-nav li:last-child {
     padding-right: 0;
   }
 
 @media (min-width: 800px) {
 
-.primary-nav li:last-child{
+.primary-nav li:last-child {
       padding-right: 20px
   }
   }
 
-.primary-nav a{
+.primary-nav a {
     color: #FFF;
     font-weight: 300;
     text-decoration: none;
@@ -1364,23 +1365,23 @@ padding-top:10px;
 
 @media (min-width: 800px) {
 
-.primary-nav a{
-      padding: 12px 0;
+.primary-nav a {
       font-size: 1rem;
+      padding: 12px 0;
       background-color: transparent
   }
-      
+
       .primary-nav a.is-current-link {
         color: #fabb69;
       }
   }
 
 .reveal-item {
-opacity: 0;
--webkit-transition: all 1.5s ease-out;
-transition: all 1.5s ease-out;
--webkit-transform: scale(1.15);
-        transform: scale(1.15);
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .reveal-item--is-visible {
@@ -1389,10 +1390,10 @@ transition: all 1.5s ease-out;
             transform: scale(1);
   }
 
-.modal{
+.modal {
   position: fixed;
   z-index: 5;
-  background-color: rgba(255,255,255, .94);
+  background-color: rgba(255, 255, 255, .94);
   top: 0;
   bottom: 0;
   left: 0;
@@ -1451,7 +1452,7 @@ transition: all 1.5s ease-out;
 .social-icons__icon {
     background-color: #d59541;
     display: inline-block;
-    margin: 0  5px 5px 5px;
+    margin: 0 5px 5px 5px;
     width: 33%;
     height: 72px;
     position: relative;
@@ -1460,8 +1461,8 @@ transition: all 1.5s ease-out;
 @media (min-width: 530px) {
 
 .social-icons__icon {
-    margin: 0 5px;
-    max-width:  72px
+      width: 72px;
+      margin: 0 5px
   }
   }
 
