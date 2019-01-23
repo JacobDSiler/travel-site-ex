@@ -6,7 +6,7 @@ del = require('del');
 var config = {
   mode: {
     css: {
-      sprite: 'svg/sprite.svg',
+      sprite: 'sprite.svg',
       render: {
         css: {
           template: './gulp/templates/sprite.css'
@@ -37,8 +37,8 @@ gulp.task('copySpriteCSS', ['createSprite'], function() {
     .pipe(gulp.dest('./app/assets/styles/modules'));
 });
 
-gulp.task('endClean', ['copySpriteGraphic','copySpriteCSS'], function() {
+gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
   return del('./app/temp/sprite');
 });
 
-gulp.task('icons', ['beginClean','createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
+gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
