@@ -1155,6 +1155,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header__logo{
+    background-color: #2f5572;
     position: absolute;
     top: 0;
     left: 50%;
@@ -1166,7 +1167,6 @@ Instead edit gulp/templates/sprite */
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
-    background-color: #2f5572;
     padding: 25px 36px;
   }
 
