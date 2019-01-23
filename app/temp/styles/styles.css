@@ -1159,7 +1159,7 @@ Instead edit gulp/templates/sprite */
 
 .site-header__logo {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%) scale(.8);
             transform: translateX(-50%) scale(.8);
