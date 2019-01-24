@@ -8,7 +8,7 @@
   &--is-expanded {
     background-color: rgba($mainBlue, .55);
   }
-  
+
   @mixin atMedium {
     position: fixed;
     background-color: rgba($mainBlue, .3);
@@ -26,7 +26,7 @@
 
   &__logo {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 50%;
     transform: translateX(-50%) scale(.8);
     transition: transform .3s ease-out;
@@ -39,7 +39,7 @@
       transform: translateX(0);
 
       .site-header--dark & {
-        transform: scale(.57);
+        transform: scale(.56);
       }
     }
   }
