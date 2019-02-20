@@ -12,7 +12,7 @@
 
     @mixin atSmall {
       position: absolute;
-      left: 0;
+      left: .75rem;
     }
   }
 
